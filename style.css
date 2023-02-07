@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+section{
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.top{
+    position: absolute;
+    top: -55%;
+    left: -20%;
+    width: 62%;
+}
+.bottom{
+    position: absolute;
+    width: 62%;
+    right: -15%;
+    bottom: -85%;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: auto;
+    background-color:  #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.profile{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.content{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+}
+.intro {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.intro span:first-child{
+    margin-right: 10px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%)
+}
+.age, p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+p{
+    margin: 10px 0 30px;
+}
+.stats{
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stats::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: hsl(0, 0%, 59%);
+    opacity: 30%;
+}
+.num{
+    margin: 20px; 
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+}
+.num span{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 1px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:500px) {
+    .top{
+        width: 100%;
+        position: absolute;
+        top: -25%;
+        right: -10%;
+    }
+    .bottom{
+        width: 100%;
+        position: absolute;
+        left: 20%;
+        bottom: -29%;
+    }
+}
